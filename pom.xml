@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.jm</groupId>
-	<artifactId>soap</artifactId>
+	<artifactId>spring-soap-ws</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>soap</name>
 	<description>SOAP Web Service</description>
