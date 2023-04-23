@@ -1,6 +1,8 @@
 package com.jm.soap;
 
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.annotation.PostConstruct;
@@ -42,8 +44,12 @@ public class CountryRepository {
 		countries.put(uk.getName(), uk);
 	}
 
-	public Country findCountry(String name) {
+	public Country findByName(String name) {
 		Assert.notNull(name, "The country's name must not be null");
 		return countries.get(name);
+	}
+
+	public Collection<Country> findAll() {
+		return countries.values();
 	}
 }
